@@ -4,8 +4,21 @@ import styles from './Section.module.scss'
 
 const cx = classNames.bind(styles)
 
-const Section = ({ children, className }: { children: ReactNode; className?: string }) => {
-  return <section className={cx(['container', className])}>{children}</section>
+const Section = ({
+  title,
+  children,
+  className,
+}: {
+  title?: string
+  children: ReactNode
+  className?: string
+}) => {
+  return (
+    <section className={cx(['container', className])}>
+      {title != null ? <div className={cx('txt-title')}>{title}</div> : null}
+      {children}
+    </section>
+  )
 }
 
 export default Section
