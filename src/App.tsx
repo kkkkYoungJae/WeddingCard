@@ -1,3 +1,4 @@
+import Calendar from '@components/sections/Calendar'
 import Heading from '@components/sections/Heading'
 import ImageGallery from '@components/sections/ImageGallery'
 import Intro from '@components/sections/Intro'
@@ -71,6 +72,7 @@ function App() {
       />
       <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
+      <Calendar date={date} />
     </div>
   )
 }

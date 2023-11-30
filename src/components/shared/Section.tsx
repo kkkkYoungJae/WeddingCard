@@ -9,7 +9,7 @@ const Section = ({
   children,
   className,
 }: {
-  title?: string
+  title?: ReactNode
   children: ReactNode
   className?: string
 }) => {
