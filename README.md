@@ -65,25 +65,21 @@ $ yarn build
 - 카카오페이 송금하기 링크
 - 카카오톡 공유하기, 링크복사
 
-### 로그인
+### 메인
 
-![image](https://user-images.githubusercontent.com/42922453/62202242-e7c5b800-b3c3-11e9-9333-7004e03240be.png)
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/3421458b-d7e1-4455-bc81-d95121999636)
 
-### 회원가입
+### 인트로
 
-![image](https://user-images.githubusercontent.com/42922453/62202290-ff9d3c00-b3c3-11e9-933c-14bd143fec3b.png)
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/9a6551f3-b447-4adb-aefd-0b835d7a5678)
 
-### 타임라인
+### 이미지 갤러리
 
-![image](https://user-images.githubusercontent.com/42922453/62202350-1774c000-b3c4-11e9-92fe-8425e6396c3d.png)
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/4fc97095-127d-48fd-a455-f272ebc583da)
 
-### 내 프로필
+### 이미지 뷰어
 
-![image](https://user-images.githubusercontent.com/42922453/62202384-29566300-b3c4-11e9-9262-f874e4aaca3d.png)
-
-### 친구 목록
-
-![image](https://user-images.githubusercontent.com/42922453/62202433-3f642380-b3c4-11e9-85ee-bce6252d3cdc.png)
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/db95decf-8e8d-4030-89e2-52ed3bbc1c45)
 
 ## Used Open source
 

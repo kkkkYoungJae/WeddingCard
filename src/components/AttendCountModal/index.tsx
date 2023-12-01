@@ -50,7 +50,7 @@ const AttendCountModal = ({ wedding }: { wedding: Wedding }) => {
     })
   }, [open, close])
 
-  return <div>AttendCountModal</div>
+  return null
 }
 
 export default AttendCountModal
