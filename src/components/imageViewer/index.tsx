@@ -1,3 +1,4 @@
+import generateImageUrl from '@/utils/generateImageUrl'
 import Dimmed from '@shared/Dimmed'
 import classNames from 'classnames/bind'
 import 'swiper/css'
@@ -26,9 +27,24 @@ const ImageViewer = ({
     <Dimmed>
       <CloseButton className={cx('icon-close')} onClose={onClose} />
       <Swiper spaceBetween={20} slidesPerView={1} loop initialSlide={selectedIdx}>
-        {images.map((image, index) => (
+        {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt="이미지 뷰어" />
+            <picture>
+              <source
+                srcSet={generateImageUrl({
+                  filename: src,
+                  format: 'webp',
+                })}
+                type="image/webp"
+              />
+              <img
+                src={generateImageUrl({
+                  filename: src,
+                  format: 'jpg',
+                })}
+                alt="photo"
+              />
+            </picture>
           </SwiperSlide>
         ))}
       </Swiper>
