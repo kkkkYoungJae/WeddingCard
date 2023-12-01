@@ -38,6 +38,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.2.17"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
           ["classnames", "npm:2.3.2"],\
+          ["concurrently", "npm:8.2.2"],\
           ["craco-alias", "npm:3.0.1"],\
           ["date-fns", "npm:2.30.0"],\
           ["json-server", "npm:0.17.4"],\
@@ -7339,6 +7340,24 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/concat-map-npm-0.0.1-85a921b7ee-10c0.zip/node_modules/concat-map/",\
         "packageDependencies": [\
           ["concat-map", "npm:0.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["concurrently", [\
+      ["npm:8.2.2", {\
+        "packageLocation": "../.yarn/berry/cache/concurrently-npm-8.2.2-8ae42f052b-10c0.zip/node_modules/concurrently/",\
+        "packageDependencies": [\
+          ["concurrently", "npm:8.2.2"],\
+          ["chalk", "npm:4.1.2"],\
+          ["date-fns", "npm:2.30.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["rxjs", "npm:7.8.1"],\
+          ["shell-quote", "npm:1.8.1"],\
+          ["spawn-command", "npm:0.0.2"],\
+          ["supports-color", "npm:8.1.1"],\
+          ["tree-kill", "npm:1.2.2"],\
+          ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16441,6 +16460,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["rxjs", [\
+      ["npm:7.8.1", {\
+        "packageLocation": "../.yarn/berry/cache/rxjs-npm-7.8.1-41c443a75b-10c0.zip/node_modules/rxjs/",\
+        "packageDependencies": [\
+          ["rxjs", "npm:7.8.1"],\
+          ["tslib", "npm:2.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["safe-array-concat", [\
       ["npm:1.0.1", {\
         "packageLocation": "../.yarn/berry/cache/safe-array-concat-npm-1.0.1-8a42907bbf-10c0.zip/node_modules/safe-array-concat/",\
@@ -17007,6 +17036,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/sourcemap-codec-npm-1.4.8-3a1a9e60b1-10c0.zip/node_modules/sourcemap-codec/",\
         "packageDependencies": [\
           ["sourcemap-codec", "npm:1.4.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["spawn-command", [\
+      ["npm:0.0.2", {\
+        "packageLocation": "../.yarn/berry/cache/spawn-command-npm-0.0.2-014d4d5d9f-10c0.zip/node_modules/spawn-command/",\
+        "packageDependencies": [\
+          ["spawn-command", "npm:0.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17807,6 +17845,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["tr46", "npm:3.0.0"],\
           ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tree-kill", [\
+      ["npm:1.2.2", {\
+        "packageLocation": "../.yarn/berry/cache/tree-kill-npm-1.2.2-3da0e5a759-10c0.zip/node_modules/tree-kill/",\
+        "packageDependencies": [\
+          ["tree-kill", "npm:1.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18700,6 +18747,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.2.17"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
           ["classnames", "npm:2.3.2"],\
+          ["concurrently", "npm:8.2.2"],\
           ["craco-alias", "npm:3.0.1"],\
           ["date-fns", "npm:2.30.0"],\
           ["json-server", "npm:0.17.4"],\

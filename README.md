@@ -18,13 +18,6 @@ $ yarn start
 ```
 
 App이 `http://localhost:3000`에서 실행됩니다.
-
-JSON Server도 함께 실행해야 합니다
-
-```
-$ yarn dev:db
-```
-
 JSON Server가 `http://localhost:8888`에서 실행됩니다.
 
 ## Build
@@ -108,6 +101,7 @@ $ yarn build
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco)
 - [json-server](https://www.npmjs.com/package/json-server)
 - [webpack-font-preload-plugin](https://www.npmjs.com/package/webpack-font-preload-plugin)
+- [concurrently](https://www.npmjs.com/package/concurrently)
 
 ## License
 
