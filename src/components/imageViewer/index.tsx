@@ -1,3 +1,4 @@
+import Dimmed from '@shared/Dimmed'
 import classNames from 'classnames/bind'
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -22,7 +23,7 @@ const ImageViewer = ({
   }
 
   return (
-    <div className={cx('dimmed')}>
+    <Dimmed>
       <CloseButton className={cx('icon-close')} onClose={onClose} />
       <Swiper spaceBetween={20} slidesPerView={1} loop initialSlide={selectedIdx}>
         {images.map((image, index) => (
@@ -31,7 +32,7 @@ const ImageViewer = ({
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </Dimmed>
   )
 }
 

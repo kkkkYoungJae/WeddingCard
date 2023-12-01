@@ -7,6 +7,7 @@ import Invitation from '@components/sections/Invitation'
 import Map from '@components/sections/Map'
 import Share from '@components/sections/Share'
 import Video from '@components/sections/Video'
+import Modal from '@components/shared/Modal'
 import { Wedding } from '@models/wedding'
 import FullScreenMessage from '@shared/FullScreenMessage'
 import classNames from 'classnames/bind'
@@ -79,6 +80,15 @@ function App() {
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
+      <Modal
+        open
+        title="현재 참석자"
+        body={
+          <div>
+            <input />
+          </div>
+        }
+      />
     </div>
   )
 }
