@@ -48,7 +48,7 @@ const AttendCountModal = ({ wedding }: { wedding: Wedding }) => {
         close()
       },
     })
-  }, [])
+  }, [open, close])
 
   return <div>AttendCountModal</div>
 }
