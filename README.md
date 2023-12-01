@@ -90,7 +90,11 @@ $ yarn build
 
 ![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/3cbf3050-2ef7-4e6b-8979-28f72f8f52de)
 
-### 원본
+### 카카오톡 공유 화면
+
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/26971186-9165-4e6b-89eb-841abeb473ab)
+
+### 원본 이미지
 
 ![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/416cfe9c-51bf-4417-b293-0c09a518c02e)
 
