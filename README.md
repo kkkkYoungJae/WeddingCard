@@ -17,7 +17,7 @@ $ yarn install
 $ yarn start
 ```
 
-App이 `http://localhost:3000`에서 실행됩니다.
+App이 `http://localhost:3000`에서 실행됩니다.<br/>
 JSON Server가 `http://localhost:8888`에서 실행됩니다.
 
 ## Build
@@ -89,6 +89,10 @@ $ yarn build
 ### 카카오톡 공유하기
 
 ![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/3cbf3050-2ef7-4e6b-8979-28f72f8f52de)
+
+### 원본
+
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/416cfe9c-51bf-4417-b293-0c09a518c02e)
 
 ## Used Open source
 
