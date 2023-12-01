@@ -1,47 +1,102 @@
-# Getting Started with Create React App
+# Wedding Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 모바일 청첩장 프로젝트입니다. 여러 주제 중, 실생활에서 직접 써볼 만한 주제를 선정하여 진행되었습니다.
 
-## Available Scripts
+### 참여한 사람
 
-In the project directory, you can run:
+- [김영재](https://github.com/kkkkYoungJae) : 프론트엔드 개발
 
-### `yarn start`
+## Development Configuration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> 이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app)으로 만들어졌습니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Repository를 다운 받은 후, 해당 디렉토리에서 아래 명령어를 실행합니다.
 
-### `yarn test`
+```
+$ yarn install
+$ yarn start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+App이 `http://localhost:3000`에서 실행됩니다.
 
-### `yarn build`
+JSON Server도 함께 실행해야 합니다
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ yarn dev:db
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+JSON Server가 `http://localhost:8888`에서 실행됩니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Build
 
-### `yarn eject`
+```
+$ yarn build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+위 명령어를 실행하면 `build` 폴더에 빌드 결과물이 저장됩니다. production mode로 번들하고 최적화하여 수행 성능이 개선됩니다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> 배포에 대한 추가적인 정보는 [여기](https://facebook.github.io/create-react-app/docs/deployment)를 확인해주세요.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Feature
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+이 프로젝트는 기본적인 기능을 담은 청첩장 서비스를 구현하였습니다.
 
-## Learn More
+### 기술적 요소
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- yarn berry, with pnp(npm 대비 효율적인 의존성 검색, 엄격한 의존성 관리)
+- craco webpack (절대경로 alias 컴파일)
+- JSON Server (프로토타입용 RestAPI)
+- KakaoMap, KakaopayLink, 카카오톡 공유하기 오픈api 연동
+- react-query (비동기 로직 관리)
+- ErrorBoundary를 통한 에러처리
+- Suspense를 통한 로딩UI
+- video 최적화 (네트워크별 품질 관리, mp4 -> webm 변환)
+- 이미지 최적화 (이미지 압축(리사이징, webp)하여 [Cloudinary](https://cloudinary.com/)에 별도 저장)
+- 폰트 최적화 (브라우저 플랫폼별 woff2, woff, ttf를 순차적으로 적용, Preload 적용)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# WeddingCard
+### 기능적 요소
+
+- 타임라인
+- 참석 가능 인원 여부 확인 및 추가
+- 카카오 맵
+- 이미지 갤러리
+- 데이트 달력
+- 연락처, 계좌번호
+- 카카오페이 송금하기 링크
+- 카카오톡 공유하기, 링크복사
+
+### 로그인
+
+![image](https://user-images.githubusercontent.com/42922453/62202242-e7c5b800-b3c3-11e9-9333-7004e03240be.png)
+
+### 회원가입
+
+![image](https://user-images.githubusercontent.com/42922453/62202290-ff9d3c00-b3c3-11e9-933c-14bd143fec3b.png)
+
+### 타임라인
+
+![image](https://user-images.githubusercontent.com/42922453/62202350-1774c000-b3c4-11e9-92fe-8425e6396c3d.png)
+
+### 내 프로필
+
+![image](https://user-images.githubusercontent.com/42922453/62202384-29566300-b3c4-11e9-9262-f874e4aaca3d.png)
+
+### 친구 목록
+
+![image](https://user-images.githubusercontent.com/42922453/62202433-3f642380-b3c4-11e9-85ee-bce6252d3cdc.png)
+
+## Used Open source
+
+프로젝트에 사용된 오픈소스 라이브러리는 아래와 같습니다.
+
+- [date-fns](https://www.npmjs.com/package/date-fns)
+- [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
+- [react-day-picker](https://www.npmjs.com/package/react-day-picker)
+- [react-query](https://www.npmjs.com/package/react-query)
+- [@craco/craco](https://www.npmjs.com/package/@craco/craco)
+- [json-server](https://www.npmjs.com/package/json-server)
+- [webpack-font-preload-plugin](https://www.npmjs.com/package/webpack-font-preload-plugin)
+
+## License
+
+MIT License
