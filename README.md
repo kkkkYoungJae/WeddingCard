@@ -81,6 +81,22 @@ $ yarn build
 
 ![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/db95decf-8e8d-4030-89e2-52ed3bbc1c45)
 
+### 달력
+
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/1ee69721-3333-4dbd-80d4-a8fa09234c75)
+
+### 카카오 맵
+
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/40877dba-8ee5-4daa-964e-9ff1913613c8)
+
+### 연락처
+
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/647a77a9-5a06-44be-85dc-6ed43517a18b)
+
+### 카카오톡 공유하기
+
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/3cbf3050-2ef7-4e6b-8979-28f72f8f52de)
+
 ## Used Open source
 
 프로젝트에 사용된 오픈소스 라이브러리는 아래와 같습니다.
