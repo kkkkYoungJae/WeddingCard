@@ -87,7 +87,7 @@ $ yarn build
 
 ### 카카오 맵
 
-![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/40877dba-8ee5-4daa-964e-9ff1913613c8)
+![image](https://github.com/kkkkYoungJae/WeddingCard/assets/75121415/6cef89a1-164f-4d2c-bebb-e308abdcac0a)
 
 ### 연락처
 
@@ -110,5 +110,7 @@ $ yarn build
 - [webpack-font-preload-plugin](https://www.npmjs.com/package/webpack-font-preload-plugin)
 
 ## License
+
+- [favicon](https://www.flaticon.com/kr/free-icon/love-letter_693423?term=%ED%8E%B8%EC%A7%80&page=1&position=10&origin=search&related_id=693423)
 
 MIT License
