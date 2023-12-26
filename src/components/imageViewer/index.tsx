@@ -1,4 +1,3 @@
-import generateImageUrl from '@/utils/generateImageUrl'
 import Dimmed from '@shared/Dimmed'
 import classNames from 'classnames/bind'
 import 'swiper/css'
@@ -30,20 +29,8 @@ const ImageViewer = ({
         {images.map((src, index) => (
           <SwiperSlide key={index}>
             <picture>
-              <source
-                srcSet={generateImageUrl({
-                  filename: src,
-                  format: 'webp',
-                })}
-                type="image/webp"
-              />
-              <img
-                src={generateImageUrl({
-                  filename: src,
-                  format: 'jpg',
-                })}
-                alt="photo"
-              />
+              <source srcSet={`${src}.webp`} type="image/webp" />
+              <img src={`${src}.jpg`} alt="photo" />
             </picture>
           </SwiperSlide>
         ))}

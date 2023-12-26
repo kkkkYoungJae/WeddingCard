@@ -1,4 +1,3 @@
-import generateImageUrl from '@/utils/generateImageUrl'
 import Section from '@shared/Section'
 import classNames from 'classnames/bind'
 import { useState } from 'react'
@@ -33,22 +32,8 @@ const ImageGallery = ({ images }: { images: string[] }) => {
               }}
             >
               <picture>
-                <source
-                  srcSet={generateImageUrl({
-                    filename: src,
-                    format: 'webp',
-                    option: 'w_240,h_240,q_auto,c_fill',
-                  })}
-                  type="image/webp"
-                />
-                <img
-                  src={generateImageUrl({
-                    filename: src,
-                    format: 'jpg',
-                    option: 'w_240,h_240,q_auto,c_fill',
-                  })}
-                  alt="photo"
-                />
+                <source srcSet={`${src}.webp`} type="image/webp" />
+                <img src={`${src}.jpg`} alt="photo" />
               </picture>
             </li>
           ))}
